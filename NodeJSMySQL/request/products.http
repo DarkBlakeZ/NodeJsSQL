@@ -1,0 +1,23 @@
+@api = http://localhost:2000/products
+
+GET {{api}}
+
+###
+
+POST {{api}}
+Content-Type: application/json
+
+{
+    "name": "Otro producto",
+    "description": "otro producto gamer",
+    "quantity": 100
+}
+
+###
+
+GET {{api}}/3
+
+
+###
+
+DELETE {{api}}/1
